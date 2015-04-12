@@ -12,30 +12,9 @@
     <button id="encrypt">Lock Down</button>
 
     <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="lib/encoder.js"></script>
+    <script src="lib/page.js"></script>
 
-    <script>
-      var encoder = {
-        setMessage: function() {
-        },
-        getPassword: function() {
-        },
-        setUrl: function() {
-        },
-        replaceMessageWithUrl: function () {
-        },
-        encrypt: function() {
-          cypher = CryptoJS.AES.encrypt(this.message, this.password)
-          console.log("Verified: " +
-            CryptoJS.AES.decrypt(cypher, this.password).toString(CryptoJS.enc.Utf8))
-          return cypher
-        },
-        protect: function() {
-          this.setMessage()
-          this.getPassword()
-          this.setUrl()
-          this.replaceMessageWithUrl()
-        }
-      }
-    </script>
   </body>
 </html>
